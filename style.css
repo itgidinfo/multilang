@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+html, body {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f1f1f1;
+    padding: 30px;
+}
+
+.container-free {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.site-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3, h4 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 20px 0 30px 0;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+input, button, select, textarea {
+    background: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    font-size: .9rem;
+    outline: none;
+}
+
+input[type="range"] {
+    padding: 10px 0;
+}
+
+input:active, input:focus, textarea:active, textarea:focus, select:active, select:focus {
+    background:  orangered;
+}
+
+input[type="date"] {
+    padding: 8px 20px;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+}
+
+button:hover {
+    background: orangered;
+}
+
+button:active {
+    background: black;
+    color: orangered;
+}
+
+.form-div {
+    margin-bottom: 30px;
+}
+
+.out-block {
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+.section {
+    margin: 10px 0 10px 0;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid #c2c2c2;
+}
+
+.section div {
+    margin-bottom: 20px;
+}
+
+.red {
+    color: IndianRed;
+}
+
+.courses {
+    margin-top: 40px;
+}
+
+.courses li {
+    margin-bottom: 20px;
+}
+
+.courses a {
+    color: #222;
+}
+
+.active {
+    box-shadow: 0 0 10px #000;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+header.site-header{
+    background: #345a71;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.site-title {
+
+}
+
+dl {
+    padding: 20px;
+    background: #dadada;
+}
+
+dt {
+    font-weight: 800;
+    text-transform:capitalize;
+}
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin-left: 50px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-areas: 
+    "left-panel right-panel";
+      grid-template-columns:  1fr 11fr ;
+
+}
+
+.grid-1 img {
+    display: block;
+    max-width: 70%;
+    max-height: 450px;
+    margin: 20px 10%;
+}
+
+.left-panel {
+    grid-area: left-panel;
+}
+
+.right-panel {
+    grid-area: right-panel;
+}
+
